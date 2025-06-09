@@ -1,0 +1,34 @@
+.tower-wrapper{
+    position: relative;
+}
+
+.tower {
+    width: 100px;
+    height: 100px;
+    background: Url('https://imgur.com/eQD8ayH.jpg');
+    background-size: 100%;
+    transform: rotate(var(--rotate));
+}
+
+.cannonball{
+    background: Url("https://media.tenor.com/P6RWJwQW_YsAAAAj/explosion-gif.gif");
+    display: var(--isActive);
+    z-index: 1;
+    position: absolute;
+    left: 35px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+    animation: shoot var(--shootingSpeed) infinite;
+}
+
+@keyframes shoot {
+    0%{
+        top: 20px;
+    }
+    100%{
+        top: 400px;
+        left: 350px;
+    }
+}

@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Layout } from "./Components/Layout";
 import "./style.css";
+import { PlayerModel } from "./Models/PlayerModel";
 
 export const App = () => {
   //need this because of the StrictMode double render so it doesn't create two connections on the backend
@@ -20,5 +21,13 @@ export const App = () => {
     console.log("closing", ev);
   });
 
+  const leo: PlayerModel = {
+    health: 100,
+    id: "1",
+    money: 200,
+    reasearches: [],
+    structures: [],
+    css: {},
+  };
   return <Layout />;
 };

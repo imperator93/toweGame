@@ -1,0 +1,9 @@
+.command-pallete{
+    align-self: flex-start;
+    margin-left: auto;
+    height: 300px;
+    width: 300px;
+    background: black;
+    transition: opacity 500ms;
+    opacity: 1;
+}

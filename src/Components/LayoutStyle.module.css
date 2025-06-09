@@ -1,5 +1,10 @@
 .layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 100vw;
     height: 100vh;
-    background: red;
+    background: url("https://imgur.com/Ib2U5EN.jpg");
+    background-size: 100%;
 }

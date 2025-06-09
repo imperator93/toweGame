@@ -1,0 +1,7 @@
+.island{
+    width: 700px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    transform: scaleX(1);
+}
