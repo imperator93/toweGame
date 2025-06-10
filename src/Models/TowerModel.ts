@@ -1,10 +1,11 @@
+import { Structure } from "./StructureModel";
 import { Research } from "./ResearchModel";
 import {
   TowerAttackSpeedResearch,
   TowerDamageReasearch,
 } from "./TowerResearchModel";
 
-export class TowerModel {
+export class TowerModel extends Structure {
   cost: number = 500;
   damage: number = 10;
   fireRate: number = 1000;
